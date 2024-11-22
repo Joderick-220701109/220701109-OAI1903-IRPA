@@ -1,0 +1,358 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>CC3B0BC9CC4_v2_sub_g.gi53V31hkvM1lCB3D2W3WxG2</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1540,3687" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="LinkedInUsername" />
+      <Variable x:TypeArguments="ss:SecureString" Name="LinkedInPassword" />
+      <Variable x:TypeArguments="x:String" Name="Domain" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="Skills" />
+      <Variable x:TypeArguments="x:String" Name="ApplicationContent" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="AEmber" />
+      <Variable x:TypeArguments="sd:DataTable" Name="skillsExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="job" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="622,3379" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="588,3287" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" NewSession="True" Url="https://www.linkedin.com/">
+        <ui:OpenBrowser.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,3139" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: LinkedIn: Log In or Sign Up" sap:VirtualizedContainerService.HintSize="520,3079" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="b0c71565-dfcc-407e-b242-89ab5c224f97" Version="V2" WindowResize="Maximize">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2839" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="job_icon" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Sign in''" sap:VirtualizedContainerService.HintSize="452,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com" CVScreenId="9ec2d403-0a0b-45ee-adde-d0e3ed67ab74" CvElementArea="1421, 105, 107, 56" CvTextArea="1448, 125, 52, 19" CvTextArgument="Sign in" CvType="Button" DesignTimeRectangle="1426, 109, 98, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='           Sign in       ' tag='A' type='' class='nav__button-secondary btn-secondary-emphasis btn-md' check:innerText='Sign in' /&gt;" Guid="aef4918b-4c02-469b-a60a-dbf7d69c5f05" InformativeScreenshot="0b2ee447114b0c43c7fc37a8c934e2ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn: Log In or Sign Up' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Email or phone''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Text="jodericksherwinjohn@gmail.com" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com/login" DesignTimeRectangle="816, 405, 304, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='' aaname='           Email or phone         ' /&gt;" Guid="668f1725-ca75-4aa1-8251-8519b2ac82cc" InformativeScreenshot="e12ef71b98de6a868fc81d8012b13d82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="816, 395, 105, 33" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form__label--floating' aaname='           Email or phone         ' check:innerText='Email or phone' /&gt;" Guid="cd5c307d-4f73-4816-b4e1-acdd4a4b54e5" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Password''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" IsPassword="True" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Text="150904-Js" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com/login" CVScreenId="c97275e5-8d63-499f-9a43-c077749cb8e3" CvTextArea="1023, 504, 123, 56" CvTextArgument="find" CvType="Text" DesignTimeRectangle="816, 501, 304, 52" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' aaname='             Password         ' /&gt;" Guid="3e798476-fa93-4d8b-883e-abd55b69e783" InformativeScreenshot="440277ef4c57195671c70ebcc8bd65d8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="816, 501, 86, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='             Password         ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='             Password         ' tag='LABEL' type='' class='form__label--floating' check:innerText='Password' /&gt;" Guid="8b7fdaf9-36ae-4063-83e6-2917b69f9c0b" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Sign in''" sap:VirtualizedContainerService.HintSize="452,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com/login" DesignTimeRectangle="816, 609, 304, 52" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn__primary--large from__button--floating' aaname='               Sign in           ' check:innerText='Sign in' /&gt;" Guid="07977b51-4c7e-4cb2-bea1-0fa127458eb7" InformativeScreenshot="708e8ea63f8928677b639ab6640551ec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LinkedIn Login, Sign in | LinkedIn' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Signed In&quot;]" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''Jobs''" sap:VirtualizedContainerService.HintSize="452,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com/feed" DesignTimeRectangle="1068, 137, 20, 18" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;div&amp;gt;div&amp;gt;li-icon&amp;gt;svg&amp;gt;path' idx='2' parentid='global-nav' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='global-nav' tag='path' aaname='' /&gt;" Guid="ddf8b1ef-34bb-426c-b426-31c728c85b9f" InformativeScreenshot="1d9e5c0aca12c02c30a72e7debb12b17.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) Feed | LinkedIn' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="1066, 159, 23, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='         Jobs       ' parentid='global-nav' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='         Jobs       ' parentid='global-nav' tag='SPAN' type='' class='t-12 break-words block t-black--light t-normal&amp;#xA;          global-nav__primary-link-text' check:innerText='Jobs' /&gt;" Guid="18dd1db6-c7cf-4514-adeb-5b1447b49ffd" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''Search by title, skill,…''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Text="Intern" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com/jobs" CVScreenId="c97275e5-8d63-499f-9a43-c077749cb8e3" CvTextArea="473, 156, 23, 21" CvTextArgument="in" CvType="Text" DesignTimeRectangle="445, 139, 200, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='jobs-search-box-keyword-id-ember324' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='jobs-search-box-keyword-id-ember324' tag='INPUT' type='text' class='jobs-search-box__text-input jobs-search-box__keyboard-text-input jobs-search-global-typeahead__input' aaname='                                Search by title, skill, or company                                                                                  ' /&gt;" Guid="fb492110-c5e4-4388-b0f6-30d40a536178" InformativeScreenshot="889e192327c9dd739521ba691749c17b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) Jobs | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="445, 139, 28, 32" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='jobs-search-box__input-icon jobs-search-box__keywords-label' aaname='                                                            ' check:innerText='Search by title, skill, or company' /&gt;" Guid="8ec3218d-842e-4efc-b924-026e001de7ae" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click ''intern''" sap:VirtualizedContainerService.HintSize="452,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="linkedin.com/jobs" CVScreenId="c97275e5-8d63-499f-9a43-c077749cb8e3" CvTextArea="834, 173, 204, 15" CvTextArgument="Articles People Learning" CvType="Text" DesignTimeRectangle="445, 171, 624, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='basic-result-ember483' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='basic-result-ember483' tag='BUTTON' type='button' class='jobs-search-box__keyboard-nav-item jobs-search-box__typeahead-suggestion--with-recent jobs-search-box__typeahead-suggestion t-16 jobs-search-box__typeahead-suggestion--no-margin' aaname='                             intern                           ' check:innerText='intern' /&gt;" Guid="9f7ee67b-a2fb-4c4b-adc8-e61631aa62d7" InformativeScreenshot="f79495717ce6e552238dae979ee989dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(2) Jobs | LinkedIn' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="452,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Searched for Intern Role&quot;]" />
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,448" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,337" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into ''linkedin.com/jobs/searc…''" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,277" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="HardwareEvents" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Text="https://www.linkedin.com/jobs/search/?currentJobId=4009701610&amp;geoId=102713980&amp;keywords=intern&amp;origin=JOBS_HOME_KEYWORD_AUTOCOMPLETE&amp;refresh=true" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="" CVScreenId="55586029-c1ac-407f-8527-084519ba53e5" CvElementArea="122, 53, 1661, 33" CvType="InputBox" DesignTimeRectangle="165, 59, 1549, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;ctrl name='(6) intern Jobs | LinkedIn - Google Chrome - JODERICK SHERWIN J *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='(6) intern Jobs | LinkedIn - Google Chrome - JODERICK SHERWIN J *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="29ed75fc-b8f2-41ba-977e-81dcba677b55" InformativeScreenshot="56545e3360e85871749abf6c1ea4ff2d.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='(6) intern Jobs | LinkedIn - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="452,222" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="b0c71565-dfcc-407e-b242-89ab5c224f97" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                        <uix:NKeyboardShortcuts.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NKeyboardShortcuts.VerifyOptions>
+                      </uix:NKeyboardShortcuts>
+                      <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="452,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1936, 1096" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN0SURBVHhe7ZsxihRRGIT3CHsEj+ARPIJH8AiCqcEmhoKRqYaGi4kIBotgooEbbCIoiCAmImuiYNK+ejst9fdfs9XPXnCmnwUf7Kupmtn/TXfP7EIfDMPQNdLsCWn2hDR7Qprg4M7To8J5YdhzMANmOZRzJqMEC6cF9WT7zOl01jpvMi52Sz3BGjhK8yZjHYf9Ns7TvMnQxdWQ5k2GKK2JNG8yRElx4+Gr4ej5uwp+VpldJM2bDFFiMOzHbz9KNArePmxEUZw3GaI0ggGddn0TiuK8yRClEfXOT4WM6u4KRXHeZIgSmPPuj9rlo6AozpsMUQK42M0Vsuo5doGiOG8yRAl0vwHdnwKg64sgmHMU7PK7D4rivMkQJQYDqiMB3q4PD4rivMkQJQWGxcUO7MPgI2neZIjSmkjzJkOU/gU4qsaj7Oaj13/Wh3efyfxc0rzJECXGqSU//b6AAY/Pvmwe3S5cb9D9m80oivMmQ5QYp5b8uAHX7r0YTt5/3bjzdf7z13Drydv0mpdRFOdNhigxTi15bMD1+yd1kCVq2YSiOG8yRIlxasnjcF86/CicPtPXVhTFeZMhSoxTa/6qhFNo+tqKojhvMkSJcWrNX6VwOk1ff0pRnDcZosQ4teavUtNPFUVRnDcZosQ4teanwjUBh/PI6efvm0e85pwGRXHeZIgS49SaH3XZRxoucHM2As+h+kxRnDcZosQ4teYh/OLu/MXjc6S6DCJMWFRDlBin1jw093P88ZtPm8Z2qR6DCBMW1RAlxqk13/IPlNvHZ5vWdqkegwgTFtUQJcapNf/g5YfU2QauBU6qxyDChEU1RIlxas3jL71pZxur3IC5X2FB9xsAnFSHQYQJi2qIEuO0NO9wUh0GESYsqiFKjNPSvMNJdRhEmLCohigxTkvzDifVYRBhwqIaosQ4Lc07nFSHQYQJi2qIEuO0NO9wUh0GESYsqiFKjNPSvMNJdRhEmLCohigxTkvzDifVYRBhwqIaosQ4Lc07nFSHQYQJi2qIEuO0NO9wUh0GESYsqiFKjNPSvMNJdRhEmLCohigxTkvzDifVYRBhwqIaosQ4Lc07nFSHQYQJi2qI0ppI8yZDlNZEmjcZorQm0rzJEKU1keZNxv8bJjq/ZaaaPd80Vc2LO8dWdducmhNIsyek2RPS7Alp9sNw8BsApZQX8V/lIAAAAABJRU5ErkJggg==" InformativeScreenshot="5151e683680fda7de3ebb8240979edf5.jpg" Selector="&lt;html app='chrome.exe' title='LinkedIn: Log In or Sign Up' /&gt;" Title="LinkedIn: Log In or Sign Up" Url="https://www.linkedin.com/" Version="V1" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ui:OpenBrowser.Body>
+      </ui:OpenBrowser>
+    </Sequence>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="622,117" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Initiating Sub-Workflow&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ChatGPT - Invoke Workflow File (ChatGPT.xaml)" sap:VirtualizedContainerService.HintSize="622,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ChatGPT.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>

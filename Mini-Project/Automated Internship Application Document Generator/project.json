@@ -1,0 +1,66 @@
+{
+  "name": "Automated Internship Application Document Generator",
+  "projectId": "065de2f9-fa9c-43d2-a5a7-3f9b7d25861b",
+  "description": "RPA Mini-Project - 220701109 Joderick Sherwin J",
+  "main": "Main.xaml",
+  "dependencies": {
+    "Omega.OpenAIClient.Activities": "[1.10.0]",
+    "UiPath.Excel.Activities": "[2.24.2]",
+    "UiPath.IntegrationService.Activities": "[1.9.0]",
+    "UiPath.Mail.Activities": "[1.23.11]",
+    "UiPath.MicrosoftOffice365.Activities": "[2.7.24]",
+    "UiPath.System.Activities": "[24.10.6]",
+    "UiPath.Testing.Activities": "[24.10.3]",
+    "UiPath.UIAutomation.Activities": "[24.10.6]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.5.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "423c4139-8f12-4f9a-833b-17f172f8748f",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
